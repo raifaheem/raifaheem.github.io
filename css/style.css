@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#header-nav {
+    background-color: seagreen;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('restaurant-logo.png');
+    width: 150px;
+    height: 150;
+    margin: 10px 15px 10px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('backg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.menu a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight:500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight:500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: .3s
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu-section {
+    background-color: #f8f9fa;
+    height: 1000px; /* Ensures the section is tall enough to cause scrolling */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar-collapse {
+    background-color: #333; /* Different background color for mobile dropdown */
+}
+
+.navbar-collapse ul > li > a {
+    color: #fff; /* White text in the dropdown */
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
